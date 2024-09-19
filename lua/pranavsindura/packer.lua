@@ -31,6 +31,8 @@ return require("packer").startup(function(use)
 
 	use("tpope/vim-fugitive")
 
+	use("folke/neodev.nvim")
+
 	use({ "VonHeikemen/lsp-zero.nvim", branch = "v4.x" })
 	use({ "neovim/nvim-lspconfig" })
 	use({ "hrsh7th/nvim-cmp" })
@@ -39,7 +41,13 @@ return require("packer").startup(function(use)
 		"williamboman/mason.nvim",
 		"williamboman/mason-lspconfig.nvim",
 	})
-	use("folke/neodev.nvim")
 	use("stevearc/conform.nvim")
 	use("mfussenegger/nvim-lint")
+
+	use({
+		"numToStr/Comment.nvim",
+		requires = {
+			"JoosepAlviste/nvim-ts-context-commentstring",
+		},
+	})
 end)
