@@ -1,0 +1,1 @@
+# bare-nvim-config
