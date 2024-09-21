@@ -22,7 +22,16 @@ return require("packer").startup(function(use)
 
 	use({
 		"nvim-treesitter/nvim-treesitter",
-		run = ":TSUpdate",
+		run = function()
+			local ts_update = require("nvim-treesitter.install").update({ with_sync = true })
+			ts_update()
+		end,
+	})
+
+	use({
+		"nvim-treesitter/nvim-treesitter-textobjects",
+		after = "nvim-treesitter",
+		requires = "nvim-treesitter/nvim-treesitter",
 	})
 
 	use("nvim-treesitter/playground")
@@ -36,6 +45,7 @@ return require("packer").startup(function(use)
 	use({ "VonHeikemen/lsp-zero.nvim", branch = "v4.x" })
 	use({ "neovim/nvim-lspconfig" })
 	use({ "hrsh7th/nvim-cmp" })
+	use({ "hrsh7th/cmp-path" })
 	use({ "hrsh7th/cmp-nvim-lsp" })
 	use({
 		"williamboman/mason.nvim",
@@ -50,4 +60,26 @@ return require("packer").startup(function(use)
 			"JoosepAlviste/nvim-ts-context-commentstring",
 		},
 	})
+
+	use({ "windwp/nvim-autopairs", requires = "hrsh7th/nvim-cmp" })
+
+	use({
+		"windwp/nvim-ts-autotag",
+		requires = "nvim-treesitter/nvim-treesitter",
+	})
+
+	use("JoosepAlviste/nvim-ts-context-commentstring")
+
+	use("kylechui/nvim-surround")
+
+	use("smoka7/hop.nvim")
+
+	use("lewis6991/gitsigns.nvim")
+
+	use({ "kevinhwang91/nvim-ufo", requires = "kevinhwang91/promise-async" })
+
+	use("echasnovski/mini.splitjoin")
+	use("echasnovski/mini.ai")
+
+	use({ "stevearc/oil.nvim" })
 end)

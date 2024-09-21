@@ -1,5 +1,5 @@
 -- Fat Cursor
-vim.opt.guicursor = ""
+-- vim.opt.guicursor = ""
 
 -- Make line numbers default
 vim.opt.number = true
@@ -66,7 +66,7 @@ vim.opt.incsearch = true
 
 vim.opt.spell = false
 vim.opt.wrap = false
-vim.opt.shell = "powershell.exe"
+-- vim.opt.shell = "powershell"
 vim.opt.fillchars = { diff = "╱" }
 vim.opt.diffopt = "internal,filler,closeoff,linematch:60,iwhite,vertical,indent-heuristic,algorithm:histogram"
 -- vim.opt.cmdheight = 0

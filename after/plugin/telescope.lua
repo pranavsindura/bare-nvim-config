@@ -51,4 +51,4 @@ vim.keymap.set("n", "<leader>f/", builtin.current_buffer_fuzzy_find, { desc = "[
 vim.keymap.set("n", "<leader>fw", function()
 	builtin.grep_string({ search = vim.fn.input("Grep > ") })
 end, {})
-vim.keymap.set("n", "<leader>fg", builtin.git_files, {})
+vim.keymap.set("n", "<leader>fg", builtin.git_status, {})
