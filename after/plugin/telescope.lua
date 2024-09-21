@@ -6,7 +6,7 @@ require("telescope").setup({
 		mappings = {
 			i = {
 				["<c-enter>"] = "to_fuzzy_refine",
-				["<cr>"] = "select_default",
+				["<c-y>"] = "select_default",
 				["<c-n>"] = "move_selection_next",
 				["<c-p>"] = "move_selection_previous",
 			},
