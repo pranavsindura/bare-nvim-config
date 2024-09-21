@@ -5,3 +5,4 @@
 - set XDG_CONFIG_HOME as ~/.config
 - clone project as ~/.config/nvim
 - make sure gcc / g++ are available
+- install fzf and ripgrep
