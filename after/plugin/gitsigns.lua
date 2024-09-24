@@ -36,9 +36,5 @@ require("gitsigns").setup({
 		map("n", "<leader>gR", gitsigns.reset_buffer, {})
 		map("n", "<leader>gp", gitsigns.preview_hunk, {})
 		map("n", "<leader>gb", gitsigns.blame_line, {})
-		map("n", "<leader>gg", function()
-			vim.cmd("tabnew +G")
-			vim.cmd("resize 15")
-		end, {})
 	end,
 })

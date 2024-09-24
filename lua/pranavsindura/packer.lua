@@ -12,11 +12,12 @@ return require("packer").startup(function(use)
 		requires = { { "nvim-lua/plenary.nvim" } },
 	})
 
+	use({ "ellisonleao/gruvbox.nvim", as = "gruvbox" })
 	use({
-		"ellisonleao/gruvbox.nvim",
-		as = "gruvbox",
+		"rose-pine/neovim",
+		as = "rose-pine",
 		config = function()
-			vim.cmd("colorscheme gruvbox")
+			vim.cmd("colorscheme rose-pine")
 		end,
 	})
 
