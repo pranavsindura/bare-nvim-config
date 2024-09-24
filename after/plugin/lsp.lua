@@ -54,12 +54,19 @@ require("mason-lspconfig").setup({
 	ensure_installed = {
 		"lua_ls",
 		"ts_ls",
+		"eslint",
 	},
 	handlers = {
 		function(server_name)
 			require("lspconfig")[server_name].setup({})
 		end,
 	},
+})
+
+local null_ls = require("null-ls")
+
+null_ls.setup({
+	sources = {},
 })
 
 -- Add Other Filetypes

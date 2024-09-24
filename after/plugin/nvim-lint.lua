@@ -1,10 +1,10 @@
 local lint = require("lint")
 lint.linters_by_ft = {
 	markdown = { "markdownlint" },
-	javascript = { "eslint_d" },
-	typescript = { "eslint_d" },
-	javascriptreact = { "eslint_d" },
-	typescriptreact = { "eslint_d" },
+	javascript = { "eslint" },
+	typescript = { "eslint" },
+	javascriptreact = { "eslint" },
+	typescriptreact = { "eslint" },
 	json = { "jsonlint" },
 	html = { "htmlhint" },
 	python = { "pylint" },

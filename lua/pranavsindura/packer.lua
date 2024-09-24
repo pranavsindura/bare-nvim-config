@@ -9,7 +9,10 @@ return require("packer").startup(function(use)
 		"nvim-telescope/telescope.nvim",
 		tag = "0.1.8",
 		-- or                            , branch = '0.1.x',
-		requires = { { "nvim-lua/plenary.nvim" } },
+		requires = { {
+			"nvim-lua/plenary.nvim",
+			"nvim-telescope/telescope-ui-select.nvim",
+		} },
 	})
 
 	use({ "ellisonleao/gruvbox.nvim", as = "gruvbox" })
@@ -43,6 +46,7 @@ return require("packer").startup(function(use)
 
 	use("folke/neodev.nvim")
 
+	use({ "jose-elias-alvarez/null-ls.nvim" })
 	use({ "VonHeikemen/lsp-zero.nvim", branch = "v4.x" })
 	use({ "neovim/nvim-lspconfig" })
 	use({ "hrsh7th/nvim-cmp" })

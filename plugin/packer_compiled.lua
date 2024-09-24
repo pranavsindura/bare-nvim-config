@@ -139,6 +139,11 @@ _G.packer_plugins = {
     path = "/Users/pranavsindura/.local/share/bare-nvim/site/pack/packer/start/neodev.nvim",
     url = "https://github.com/folke/neodev.nvim"
   },
+  ["null-ls.nvim"] = {
+    loaded = true,
+    path = "/Users/pranavsindura/.local/share/bare-nvim/site/pack/packer/start/null-ls.nvim",
+    url = "https://github.com/jose-elias-alvarez/null-ls.nvim"
+  },
   ["nvim-autopairs"] = {
     loaded = true,
     path = "/Users/pranavsindura/.local/share/bare-nvim/site/pack/packer/start/nvim-autopairs",
@@ -222,10 +227,20 @@ _G.packer_plugins = {
     path = "/Users/pranavsindura/.local/share/bare-nvim/site/pack/packer/start/rose-pine",
     url = "https://github.com/rose-pine/neovim"
   },
+  ["telescope-ui-select.nvim"] = {
+    loaded = true,
+    path = "/Users/pranavsindura/.local/share/bare-nvim/site/pack/packer/start/telescope-ui-select.nvim",
+    url = "https://github.com/nvim-telescope/telescope-ui-select.nvim"
+  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/Users/pranavsindura/.local/share/bare-nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
+  ["typescript.nvim"] = {
+    loaded = true,
+    path = "/Users/pranavsindura/.local/share/bare-nvim/site/pack/packer/start/typescript.nvim",
+    url = "https://github.com/jose-elias-alvarez/typescript.nvim"
   },
   undotree = {
     loaded = true,
