@@ -124,6 +124,11 @@ _G.packer_plugins = {
     path = "/Users/pranavsindura/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
+  material = {
+    loaded = true,
+    path = "/Users/pranavsindura/.local/share/nvim/site/pack/packer/start/material",
+    url = "https://github.com/marko-cerovac/material.nvim"
+  },
   ["mini.ai"] = {
     loaded = true,
     path = "/Users/pranavsindura/.local/share/nvim/site/pack/packer/start/mini.ai",
