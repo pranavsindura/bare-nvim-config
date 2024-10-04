@@ -16,7 +16,7 @@ vim.keymap.set("n", "[p", "O<esc>p", { desc = "Paste Above" })
 
 vim.keymap.set("n", "]t", "<cmd>tabnext<cr>", { desc = "Next Tab" })
 vim.keymap.set("n", "[t", "<cmd>tabprev<cr>", { desc = "Previous Tab" })
-vim.keymap.set("n", "<leader>To", "<cmd>tabnew %<cr>", { desc = "[T]ab [O]pen %" })
+vim.keymap.set("n", "<leader>To", "<cmd>tabnew<cr>", { desc = "[T]ab [O]pen" })
 vim.keymap.set("n", "<leader>Tc", "<cmd>tabclose<cr>", { desc = "[T]ab [C]lose" })
 
 vim.keymap.set("n", "]q", "<cmd>cnext<cr>", { desc = "Next [Q]uickfix Item" })
@@ -55,31 +55,31 @@ vim.keymap.set("n", "<C-k>", "<C-w><C-k>", { desc = "Move focus to the upper win
 vim.keymap.set("n", "<leader>tf", "<cmd>ToggleBufferFormatOnSave<cr>", { desc = "[T]oggle buffer [F]ormat on save" })
 vim.keymap.set("n", "<leader>tF", "<cmd>ToggleFormatOnSave<cr>", { desc = "[T]oggle global [F]ormat on save" })
 vim.keymap.set("n", "<leader>td", function()
-	local enabledString = ""
-	vim.diagnostic.enable(not vim.diagnostic.is_enabled())
-	if vim.diagnostic.is_enabled() then
-		enabledString = "ENABLED"
-	else
-		enabledString = "DISABLED"
-	end
+  local enabledString = ""
+  vim.diagnostic.enable(not vim.diagnostic.is_enabled())
+  if vim.diagnostic.is_enabled() then
+    enabledString = "ENABLED"
+  else
+    enabledString = "DISABLED"
+  end
 
-	print("Vim Diagnostics: " .. enabledString)
+  print("Vim Diagnostics: " .. enabledString)
 end, { desc = "[t]oggle [d]iagnostics" })
 
 vim.keymap.set("n", "dh", function()
-	local current_diffopt = vim.o.diffopt
-	vim.cmd("set diffopt&")
-	vim.cmd("diffget /:2")
-	vim.cmd("set diffopt=" .. current_diffopt)
-	vim.cmd("diffupdate")
+  local current_diffopt = vim.o.diffopt
+  vim.cmd("set diffopt&")
+  vim.cmd("diffget /:2")
+  vim.cmd("set diffopt=" .. current_diffopt)
+  vim.cmd("diffupdate")
 end, { desc = "Get Current Change" })
 
 vim.keymap.set("n", "dl", function()
-	local current_diffopt = vim.o.diffopt
-	vim.cmd("set diffopt&")
-	vim.cmd("diffget /:3")
-	vim.cmd("set diffopt=" .. current_diffopt)
-	vim.cmd("diffupdate")
+  local current_diffopt = vim.o.diffopt
+  vim.cmd("set diffopt&")
+  vim.cmd("diffget /:3")
+  vim.cmd("set diffopt=" .. current_diffopt)
+  vim.cmd("diffupdate")
 end, { desc = "Get Incoming Change" })
 
 vim.keymap.set("i", "<C-u>", function() end)
