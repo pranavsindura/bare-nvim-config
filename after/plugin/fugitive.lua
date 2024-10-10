@@ -1,4 +1,10 @@
 vim.keymap.set("n", "<leader>gg", function()
-	vim.cmd("tabnew +G")
-	vim.cmd("resize 15")
+  vim.cmd("tabnew +G")
+  vim.cmd("resize 15")
+end, {})
+
+vim.keymap.set("n", "<leader>lg", function()
+  vim.cmd("tabnew")
+  vim.cmd("terminal lazygit")
+  vim.cmd("startinsert")
 end, {})
