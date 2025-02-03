@@ -16,7 +16,7 @@ return require("packer").startup(function(use)
   })
 
   use({ "ellisonleao/gruvbox.nvim", as = "gruvbox" })
-  use({ "rose-pine/neovim", as = "rose-pine" })
+  use({ "marko-cerovac/material.nvim" })
 
   use({
     "nvim-treesitter/nvim-treesitter",
@@ -81,4 +81,6 @@ return require("packer").startup(function(use)
   use("echasnovski/mini.ai")
 
   use({ "stevearc/oil.nvim" })
+
+  use({ "max397574/better-escape.nvim" })
 end)
