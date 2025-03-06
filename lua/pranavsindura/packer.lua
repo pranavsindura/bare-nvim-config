@@ -11,11 +11,11 @@ return require("packer").startup(function(use)
     -- or                            , branch = '0.1.x',
     requires = { {
       "nvim-lua/plenary.nvim",
-      "nvim-telescope/telescope-ui-select.nvim",
+      -- "nvim-telescope/telescope-ui-select.nvim",
     } },
   })
 
-  use({ "ellisonleao/gruvbox.nvim", as = "gruvbox" })
+  -- use({ "ellisonleao/gruvbox.nvim", as = "gruvbox" })
   use({ "marko-cerovac/material.nvim" })
 
   use({
@@ -32,13 +32,13 @@ return require("packer").startup(function(use)
     requires = "nvim-treesitter/nvim-treesitter",
   })
 
-  use("nvim-treesitter/playground")
+  -- use("nvim-treesitter/playground")
 
-  use("mbbill/undotree")
+  -- use("mbbill/undotree")
 
   use("tpope/vim-fugitive")
 
-  use("folke/neodev.nvim")
+  -- use("folke/neodev.nvim")
 
   use({ "jose-elias-alvarez/null-ls.nvim" })
   use({ "VonHeikemen/lsp-zero.nvim", branch = "v4.x" })
