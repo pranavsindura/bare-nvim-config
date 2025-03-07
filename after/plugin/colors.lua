@@ -10,4 +10,4 @@ function ColorMyPencils(color)
   -- vim.api.nvim_set_hl(0, "DiffText", { bg = "#49503b", fg = "#282828" })
 end
 
-ColorMyPencils("material-oceanic")
+ColorMyPencils("gruvbox")

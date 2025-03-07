@@ -1,3 +1,4 @@
+-- lua, default settings
 require("better_escape").setup {
   timeout = vim.o.timeoutlen,
   default_mappings = true,
@@ -6,11 +7,13 @@ require("better_escape").setup {
       j = {
         -- These can all also be functions
         k = "<Esc>",
+        j = false,
       },
     },
     c = {
       j = {
         k = "<Esc>",
+        j = false,
       },
     },
     t = {
