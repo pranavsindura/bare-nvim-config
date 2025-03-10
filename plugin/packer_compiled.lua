@@ -99,6 +99,11 @@ _G.packer_plugins = {
     path = "/Users/pranavsindura/.local/share/nvim/site/pack/packer/start/conform.nvim",
     url = "https://github.com/stevearc/conform.nvim"
   },
+  ["copilot.vim"] = {
+    loaded = true,
+    path = "/Users/pranavsindura/.local/share/nvim/site/pack/packer/start/copilot.vim",
+    url = "https://github.com/github/copilot.vim"
+  },
   ["gitsigns.nvim"] = {
     loaded = true,
     path = "/Users/pranavsindura/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
@@ -129,20 +134,10 @@ _G.packer_plugins = {
     path = "/Users/pranavsindura/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
-  ["mini.ai"] = {
-    loaded = true,
-    path = "/Users/pranavsindura/.local/share/nvim/site/pack/packer/start/mini.ai",
-    url = "https://github.com/echasnovski/mini.ai"
-  },
   ["mini.splitjoin"] = {
     loaded = true,
     path = "/Users/pranavsindura/.local/share/nvim/site/pack/packer/start/mini.splitjoin",
     url = "https://github.com/echasnovski/mini.splitjoin"
-  },
-  ["neodev.nvim"] = {
-    loaded = true,
-    path = "/Users/pranavsindura/.local/share/nvim/site/pack/packer/start/neodev.nvim",
-    url = "https://github.com/folke/neodev.nvim"
   },
   ["null-ls.nvim"] = {
     loaded = true,
@@ -211,11 +206,6 @@ _G.packer_plugins = {
     path = "/Users/pranavsindura/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
   },
-  playground = {
-    loaded = true,
-    path = "/Users/pranavsindura/.local/share/nvim/site/pack/packer/start/playground",
-    url = "https://github.com/nvim-treesitter/playground"
-  },
   ["plenary.nvim"] = {
     loaded = true,
     path = "/Users/pranavsindura/.local/share/nvim/site/pack/packer/start/plenary.nvim",
@@ -226,25 +216,10 @@ _G.packer_plugins = {
     path = "/Users/pranavsindura/.local/share/nvim/site/pack/packer/start/promise-async",
     url = "https://github.com/kevinhwang91/promise-async"
   },
-  ["rose-pine"] = {
-    loaded = true,
-    path = "/Users/pranavsindura/.local/share/nvim/site/pack/packer/start/rose-pine",
-    url = "https://github.com/rose-pine/neovim"
-  },
-  ["telescope-ui-select.nvim"] = {
-    loaded = true,
-    path = "/Users/pranavsindura/.local/share/nvim/site/pack/packer/start/telescope-ui-select.nvim",
-    url = "https://github.com/nvim-telescope/telescope-ui-select.nvim"
-  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/Users/pranavsindura/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
-  },
-  undotree = {
-    loaded = true,
-    path = "/Users/pranavsindura/.local/share/nvim/site/pack/packer/start/undotree",
-    url = "https://github.com/mbbill/undotree"
   },
   ["vim-fugitive"] = {
     loaded = true,

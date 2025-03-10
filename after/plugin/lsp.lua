@@ -1,4 +1,4 @@
-require("neodev").setup({})
+-- require("neodev").setup({})
 
 local lsp_zero = require("lsp-zero")
 

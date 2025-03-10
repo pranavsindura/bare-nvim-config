@@ -15,8 +15,8 @@ return require("packer").startup(function(use)
     } },
   })
 
-  -- use({ "ellisonleao/gruvbox.nvim", as = "gruvbox" })
-  use({ "marko-cerovac/material.nvim" })
+  use({ "ellisonleao/gruvbox.nvim", as = "gruvbox" })
+  -- use({ "marko-cerovac/material.nvim" })
 
   use({
     "nvim-treesitter/nvim-treesitter",
@@ -78,9 +78,11 @@ return require("packer").startup(function(use)
   use({ "kevinhwang91/nvim-ufo", requires = "kevinhwang91/promise-async" })
 
   use("echasnovski/mini.splitjoin")
-  use("echasnovski/mini.ai")
+  -- use("echasnovski/mini.ai")
 
   use({ "stevearc/oil.nvim" })
 
   use({ "max397574/better-escape.nvim" })
+
+  use({ "github/copilot.vim" })
 end)
