@@ -85,4 +85,6 @@ return require("packer").startup(function(use)
   use({ "max397574/better-escape.nvim" })
 
   use({ "github/copilot.vim" })
+
+  use({ "Exafunction/codeium.vim" })
 end)

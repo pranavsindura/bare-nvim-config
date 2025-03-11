@@ -94,6 +94,11 @@ _G.packer_plugins = {
     path = "/Users/pranavsindura/.local/share/nvim/site/pack/packer/start/cmp-path",
     url = "https://github.com/hrsh7th/cmp-path"
   },
+  ["codeium.vim"] = {
+    loaded = true,
+    path = "/Users/pranavsindura/.local/share/nvim/site/pack/packer/start/codeium.vim",
+    url = "https://github.com/Exafunction/codeium.vim"
+  },
   ["conform.nvim"] = {
     loaded = true,
     path = "/Users/pranavsindura/.local/share/nvim/site/pack/packer/start/conform.nvim",
