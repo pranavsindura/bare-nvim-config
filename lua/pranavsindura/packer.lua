@@ -16,10 +16,10 @@ return require("packer").startup(function(use)
   })
 
   use({ "ellisonleao/gruvbox.nvim", as = "gruvbox" })
-  -- use({ "marko-cerovac/material.nvim" })
 
   use({
     "nvim-treesitter/nvim-treesitter",
+    branch = "master",
     run = function()
       local ts_update = require("nvim-treesitter.install").update({ with_sync = true })
       ts_update()
@@ -32,15 +32,9 @@ return require("packer").startup(function(use)
     requires = "nvim-treesitter/nvim-treesitter",
   })
 
-  -- use("nvim-treesitter/playground")
-
-  -- use("mbbill/undotree")
-
   use("tpope/vim-fugitive")
 
-  -- use("folke/neodev.nvim")
-
-  use({ "jose-elias-alvarez/null-ls.nvim" })
+  use({ "nvimtools/none-ls.nvim" })
   use({ "VonHeikemen/lsp-zero.nvim", branch = "v4.x" })
   use({ "neovim/nvim-lspconfig" })
   use({ "hrsh7th/nvim-cmp" })
@@ -85,6 +79,4 @@ return require("packer").startup(function(use)
   use({ "max397574/better-escape.nvim" })
 
   use({ "github/copilot.vim" })
-
-  use({ "Exafunction/codeium.vim" })
 end)
