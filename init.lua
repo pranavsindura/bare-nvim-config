@@ -1,4 +1,10 @@
-require("pranavsindura.globals")
-require("pranavsindura.options")
-require("pranavsindura.keymaps")
-require("pranavsindura.packer")
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
+
+vim.g.have_nerd_font = true
+
+require("config.options")
+require("config.lazy")
+require("config.keymaps")
+require("config.user-commands")
+require("config.auto-commands")
