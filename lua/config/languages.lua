@@ -32,6 +32,10 @@ return {
       formatter = { "stylua" },
     },
 
+    cs = {
+      parser = "c_sharp"
+    },
+
     javascript = {
       parser = "javascript",
       server = "ts_ls",

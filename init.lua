@@ -8,3 +8,5 @@ require("config.lazy")
 require("config.keymaps")
 require("config.user-commands")
 require("config.auto-commands")
+
+vim.cmd("colorscheme catppuccin")

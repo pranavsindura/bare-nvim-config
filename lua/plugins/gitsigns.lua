@@ -29,6 +29,11 @@ return {
         end
       end, { desc = "Jump to previous git [c]hange" })
 
+      map("n", "<leader>gd", function()
+        vim.cmd("tabnew %")
+        gitsigns.diffthis()
+      end, { desc = "git [d]iff file" })
+
       -- Actions (Wrapped in anonymous functions to prevent internal API crashes)
       map("n", "<leader>gr", function() gitsigns.reset_hunk() end, { desc = "git [r]eset hunk" })
       map("n", "<leader>gR", function() gitsigns.reset_buffer() end, { desc = "git [R]eset buffer" })
