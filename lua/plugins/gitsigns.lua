@@ -1,6 +1,8 @@
 return {
   "lewis6991/gitsigns.nvim",
   opts = {
+    max_file_length = 40000,
+    update_debounce = 200,
     on_attach = function(bufnr)
       local gitsigns = require("gitsigns")
 

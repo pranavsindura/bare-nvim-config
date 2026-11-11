@@ -25,7 +25,7 @@ return {
             lsp_format = "fallback",
           })
         end,
-        desc = "Format buffer",
+        desc = "[b]uffer [f]ormat",
       },
     },
 
